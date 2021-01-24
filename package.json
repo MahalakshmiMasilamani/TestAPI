@@ -1,0 +1,21 @@
+{
+   "name":"tests",
+   "version":"1.0.0",
+   "description":"tests",
+   "directories":{
+      "tests":"PostmanCollection",
+      "environments":"PostmanEnvironment"
+   },
+   "scripts":{
+      "sampleAPI":"newman run PostmanCollection/wms_int_b.json --folder Automated -e PostmanEnvironment/Local.postman_environment.json -k --reporters junit"
+   },
+   "repository":{
+      "type":"git",
+      "url":"git@gitlab.dev.com:test.git"
+   },
+   "author":"AB",
+   "dependencies":{
+      "newman":"^5.2.0",
+      "npm":"^6.14.8"
+   }
+}
