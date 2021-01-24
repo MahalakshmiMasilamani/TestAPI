@@ -1,0 +1,1771 @@
+{
+	"id": "8aa689f8-f705-422e-8194-8f7dc62dcc62",
+	"values": [
+		{
+			"key": "",
+			"value": "",
+			"enabled": false
+		},
+		{
+			"key": "locale",
+			"value": "nl_NL",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv10",
+			"value": "bb062ab6-5404-4940-9109-87de900d0a30",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv11",
+			"value": "6bf62457-6952-478b-bb3a-d66461bae687",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv12",
+			"value": "3e3e99a0-fcc7-488c-9c62-c2f6c4ac8607",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv13",
+			"value": "49c11898-4e30-4ef7-a0e8-25478e0484eb",
+			"enabled": true
+		},
+		{
+			"key": "currencyCode",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "availableDays0",
+			"value": "2020-06-29",
+			"enabled": true
+		},
+		{
+			"key": "availableDays1",
+			"value": "2020-06-30",
+			"enabled": true
+		},
+		{
+			"key": "availableDays2",
+			"value": "2020-07-01",
+			"enabled": true
+		},
+		{
+			"key": "availableDays3",
+			"value": "2020-07-02",
+			"enabled": true
+		},
+		{
+			"key": "availableDays4",
+			"value": "2020-07-03",
+			"enabled": true
+		},
+		{
+			"key": "availableDays5",
+			"value": "2020-07-04",
+			"enabled": true
+		},
+		{
+			"key": "availableDays6",
+			"value": "2020-07-06",
+			"enabled": true
+		},
+		{
+			"key": "availableDays7",
+			"value": "2020-07-07",
+			"enabled": true
+		},
+		{
+			"key": "availableDays8",
+			"value": "2020-07-08",
+			"enabled": true
+		},
+		{
+			"key": "availableDays9",
+			"value": "2020-07-09",
+			"enabled": true
+		},
+		{
+			"key": "collectionDateToday",
+			"value": "2020-07-06",
+			"enabled": true
+		},
+		{
+			"key": "collectionDateNextDay",
+			"value": "2020-07-07",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv14",
+			"value": "bbf0a549-8aad-48ef-949f-1997087978dd",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv15",
+			"value": "81083d15-a299-403b-b827-2b2df7dbd3c4",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv16",
+			"value": "0949b7b1-0ba0-4ff1-ad9b-9674f02831f9",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv17",
+			"value": "2a652d41-770e-4aa2-9fdd-0c98d0083ff6",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime",
+			"value": "19:15:00",
+			"enabled": true
+		},
+		{
+			"key": "chargeBreakdownLength",
+			"value": 10,
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription0",
+			"value": "FREIGHT DOMESTIC TRANSIT",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier0",
+			"value": "FRTDM",
+			"enabled": true
+		},
+		{
+			"key": "chargeType0",
+			"value": "BASIC_ELEMENT",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount0",
+			"value": "84246.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount0",
+			"value": "84246.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator0",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType0",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription1",
+			"value": "FREIGHT - NO VAT",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier1",
+			"value": "FRTNV",
+			"enabled": true
+		},
+		{
+			"key": "chargeType1",
+			"value": "BASIC_ELEMENT",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount1",
+			"value": "126369.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount1",
+			"value": "126369.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator1",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType1",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription2",
+			"value": "INSURANCE",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier2",
+			"value": "IN",
+			"enabled": true
+		},
+		{
+			"key": "chargeType2",
+			"value": "PRODUCT_OPTION",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount2",
+			"value": "750.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount2",
+			"value": "750.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator2",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType2",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription3",
+			"value": "MULTIPLE ITEM/MULTI PIECE",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier3",
+			"value": "MPC01",
+			"enabled": true
+		},
+		{
+			"key": "chargeType3",
+			"value": "SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount3",
+			"value": "1850.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount3",
+			"value": "1850.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator3",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType3",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription4",
+			"value": "RECEIVER PAYS FEE",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier4",
+			"value": "RPF00",
+			"enabled": true
+		},
+		{
+			"key": "chargeType4",
+			"value": "SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount4",
+			"value": "21061.50",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount4",
+			"value": "21061.50",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator4",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType4",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "lineOfBusiness",
+			"value": "200",
+			"enabled": true
+		},
+		{
+			"key": "productCode",
+			"value": "EC",
+			"enabled": true
+		},
+		{
+			"key": "productOption0",
+			"value": "IN",
+			"enabled": true
+		},
+		{
+			"key": "productPayweightResults",
+			"value": {
+				"actualVolume": "2.16435",
+				"actualWeight": "22.5",
+				"cubeConversionFactor": "200.00",
+				"cubedWeight": "432.800",
+				"payWeight": "432.800",
+				"payweightType": "VOLUMETRIC_WEIGHT"
+			},
+			"enabled": true
+		},
+		{
+			"key": "actualVolume",
+			"value": "2.16435",
+			"enabled": true
+		},
+		{
+			"key": "actualWeight",
+			"value": "22.5",
+			"enabled": true
+		},
+		{
+			"key": "cubeConversionFactor",
+			"value": "200.00",
+			"enabled": true
+		},
+		{
+			"key": "cubedWeight",
+			"value": "432.800",
+			"enabled": true
+		},
+		{
+			"key": "payWeight",
+			"value": "432.800",
+			"enabled": true
+		},
+		{
+			"key": "payweightType",
+			"value": "VOLUMETRIC_WEIGHT",
+			"enabled": true
+		},
+		{
+			"key": "ratingProvider",
+			"value": "com.tnt.rate.globallink.service.GlobalLinkRatingService",
+			"enabled": true
+		},
+		{
+			"key": "totalPrice",
+			"value": "275928.64",
+			"enabled": true
+		},
+		{
+			"key": "totalPriceCustomerRate",
+			"value": "275793.64",
+			"enabled": true
+		},
+		{
+			"key": "vatTotal",
+			"value": "135.00",
+			"enabled": true
+		},
+		{
+			"key": "PeriodVolumeDiscountIndicator",
+			"value": "false",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription5",
+			"value": "INDEX FUEL SURCHARGE FRTDM 0%",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier5",
+			"value": "FSA00",
+			"enabled": true
+		},
+		{
+			"key": "chargeType5",
+			"value": "SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount5",
+			"value": "14743.05",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount5",
+			"value": "14743.05",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator5",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType5",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "productOption1",
+			"value": "PR",
+			"enabled": true
+		},
+		{
+			"key": "quoteId",
+			"value": "cf9536ed-94cc-4a7d-98a6-0127f2a54e98",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription6",
+			"value": "INDEX FUEL SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier6",
+			"value": "FSI01",
+			"enabled": true
+		},
+		{
+			"key": "chargeType6",
+			"value": "SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount6",
+			"value": "26124.09",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount6",
+			"value": "26124.09",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator6",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType6",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription7",
+			"value": "ENHANCED SECURITY SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier7",
+			"value": "ESS00",
+			"enabled": true
+		},
+		{
+			"key": "chargeType7",
+			"value": "SURCHARGE",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount7",
+			"value": "650.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount7",
+			"value": "650.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator7",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType7",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription8",
+			"value": "0%",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier8",
+			"value": "VAT01",
+			"enabled": true
+		},
+		{
+			"key": "chargeType8",
+			"value": "VAT",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount8",
+			"value": "0.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount8",
+			"value": "0.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator8",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType8",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "chargeDescription9",
+			"value": "18%",
+			"enabled": true
+		},
+		{
+			"key": "chargeIdentifier9",
+			"value": "VAT04",
+			"enabled": true
+		},
+		{
+			"key": "chargeType9",
+			"value": "VAT",
+			"enabled": true
+		},
+		{
+			"key": "customerTariffAmount9",
+			"value": "0.00",
+			"enabled": true
+		},
+		{
+			"key": "fullTariffAmount9",
+			"value": "135.00",
+			"enabled": true
+		},
+		{
+			"key": "vatIndicator9",
+			"value": "true",
+			"enabled": true
+		},
+		{
+			"key": "chargeFormatType9",
+			"value": "MONETARY",
+			"enabled": true
+		},
+		{
+			"key": "localeNL",
+			"value": "nl_NL",
+			"enabled": true
+		},
+		{
+			"key": "custom_controlled_flag",
+			"value": null,
+			"enabled": true
+		},
+		{
+			"key": "customs_Declaration_Required",
+			"value": true,
+			"enabled": true
+		},
+		{
+			"key": "isoDateTodayBH",
+			"value": "2018-08-17T16:42:41.162Z",
+			"enabled": true
+		},
+		{
+			"key": "quoteLength",
+			"value": 4,
+			"enabled": true
+		},
+		{
+			"key": "availabledaysLength",
+			"value": 10,
+			"enabled": true
+		},
+		{
+			"key": "availabledays0",
+			"value": "2020-06-25",
+			"enabled": true
+		},
+		{
+			"key": "availabledays1",
+			"value": "2020-06-26",
+			"enabled": true
+		},
+		{
+			"key": "availabledays2",
+			"value": "2020-06-29",
+			"enabled": true
+		},
+		{
+			"key": "availabledays3",
+			"value": "2020-06-30",
+			"enabled": true
+		},
+		{
+			"key": "availabledays4",
+			"value": "2020-07-01",
+			"enabled": true
+		},
+		{
+			"key": "availabledays5",
+			"value": "2020-07-02",
+			"enabled": true
+		},
+		{
+			"key": "availabledays6",
+			"value": "2020-07-03",
+			"enabled": true
+		},
+		{
+			"key": "availabledays7",
+			"value": "2020-07-06",
+			"enabled": true
+		},
+		{
+			"key": "availabledays8",
+			"value": "2020-07-07",
+			"enabled": true
+		},
+		{
+			"key": "availabledays9",
+			"value": "2020-07-08",
+			"enabled": true
+		},
+		{
+			"key": "productid0",
+			"value": "EX09",
+			"enabled": true
+		},
+		{
+			"key": "productname0",
+			"value": "Before 09:00",
+			"enabled": true
+		},
+		{
+			"key": "deliverydate0",
+			"value": "2020-06-26",
+			"enabled": true
+		},
+		{
+			"key": "collectiondate0",
+			"value": "2020-06-25",
+			"enabled": true
+		},
+		{
+			"key": "icastarttime0",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaendtime0",
+			"value": "17:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastcalltime0",
+			"value": "15:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitdaysexcludingholidays0",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "currencycode0",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "price0",
+			"value": 795.26,
+			"enabled": true
+		},
+		{
+			"key": "vat0",
+			"value": 138.02,
+			"enabled": true
+		},
+		{
+			"key": "orderhashcode0",
+			"value": "54023FBF4512E100AAB5A88BE0BF275D353D65480826CE7B262250D371214E9E",
+			"enabled": true
+		},
+		{
+			"key": "pricehashcode0",
+			"value": "89D7C67743A95862BEE1CE623394B1D68504B97E22ACE9359377660FD5F3D859",
+			"enabled": true
+		},
+		{
+			"key": "productid1",
+			"value": "EX10",
+			"enabled": true
+		},
+		{
+			"key": "productname1",
+			"value": "Before 10:00",
+			"enabled": true
+		},
+		{
+			"key": "deliverydate1",
+			"value": "2020-06-26",
+			"enabled": true
+		},
+		{
+			"key": "collectiondate1",
+			"value": "2020-06-25",
+			"enabled": true
+		},
+		{
+			"key": "icastarttime1",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaendtime1",
+			"value": "17:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastcalltime1",
+			"value": "15:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitdaysexcludingholidays1",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "currencycode1",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "price1",
+			"value": 768.28,
+			"enabled": true
+		},
+		{
+			"key": "vat1",
+			"value": 133.34,
+			"enabled": true
+		},
+		{
+			"key": "orderhashcode1",
+			"value": "51BC853A30D468EC060BE64C4F999AFACB70E386A6166D9927B778710888585C",
+			"enabled": true
+		},
+		{
+			"key": "pricehashcode1",
+			"value": "26C31ED71984543D84DBE34A6A79F069413F640A5454668AE5FD4D8CC660E80C",
+			"enabled": true
+		},
+		{
+			"key": "productid2",
+			"value": "EX12",
+			"enabled": true
+		},
+		{
+			"key": "productname2",
+			"value": "Before 12:00",
+			"enabled": true
+		},
+		{
+			"key": "deliverydate2",
+			"value": "2020-06-26",
+			"enabled": true
+		},
+		{
+			"key": "collectiondate2",
+			"value": "2020-06-25",
+			"enabled": true
+		},
+		{
+			"key": "icastarttime2",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaendtime2",
+			"value": "17:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastcalltime2",
+			"value": "15:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitdaysexcludingholidays2",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "currencycode2",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "price2",
+			"value": 741.29,
+			"enabled": true
+		},
+		{
+			"key": "vat2",
+			"value": 128.65,
+			"enabled": true
+		},
+		{
+			"key": "orderhashcode2",
+			"value": "2E59831A628933B33D001E9622362765F261D1A4EB6D55B041FD1608D547BAE9",
+			"enabled": true
+		},
+		{
+			"key": "pricehashcode2",
+			"value": "F3FD124269ACFCF27D80C98FEDFB1ED6115B1E5D50436F85E5B0E0E836DF99B3",
+			"enabled": true
+		},
+		{
+			"key": "isoDateTodayJO",
+			"value": "2018-09-24T13:15:53.640Z",
+			"enabled": true
+		},
+		{
+			"key": "productid3",
+			"value": "EX",
+			"enabled": true
+		},
+		{
+			"key": "productname3",
+			"value": "Before 18:00",
+			"enabled": true
+		},
+		{
+			"key": "deliverydate3",
+			"value": "2020-06-26",
+			"enabled": true
+		},
+		{
+			"key": "collectiondate3",
+			"value": "2020-06-25",
+			"enabled": true
+		},
+		{
+			"key": "icastarttime3",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaendtime3",
+			"value": "17:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastcalltime3",
+			"value": "15:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitdaysexcludingholidays3",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "currencycode3",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "price3",
+			"value": 727.8,
+			"enabled": true
+		},
+		{
+			"key": "vat3",
+			"value": 126.31,
+			"enabled": true
+		},
+		{
+			"key": "orderhashcode3",
+			"value": "7915DB565791293CAA81CC792F38D9EFF3BB8CB0A15BD38782D7E617B81809C3",
+			"enabled": true
+		},
+		{
+			"key": "pricehashcode3",
+			"value": "3C925F40291D91523B508CB987633FAF70DA0C4EB5F745237A1C8D096F9593E1",
+			"enabled": true
+		},
+		{
+			"key": "productid4",
+			"value": "DVF",
+			"enabled": true
+		},
+		{
+			"key": "productname4",
+			"value": "Translation Not Found",
+			"enabled": true
+		},
+		{
+			"key": "deliverydate4",
+			"value": "2018-08-16",
+			"enabled": true
+		},
+		{
+			"key": "collectiondate4",
+			"value": "2018-08-12",
+			"enabled": true
+		},
+		{
+			"key": "icastarttime4",
+			"value": "11:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaendtime4",
+			"value": "16:00:00",
+			"enabled": true
+		},
+		{
+			"key": "lastcalltime4",
+			"value": "15:00:00",
+			"enabled": true
+		},
+		{
+			"key": "transitdaysexcludingholidays4",
+			"value": 3,
+			"enabled": true
+		},
+		{
+			"key": "currencycode4",
+			"value": "BHD",
+			"enabled": true
+		},
+		{
+			"key": "price4",
+			"value": 66.45,
+			"enabled": true
+		},
+		{
+			"key": "vat4",
+			"value": 0,
+			"enabled": true
+		},
+		{
+			"key": "orderhashcode4",
+			"value": "DDE047E00E4221EC071A14B4FA20BF565BED5363B1FF37FBDE6F848A5502AE9F",
+			"enabled": true
+		},
+		{
+			"key": "pricehashcode4",
+			"value": "7AC5823EF98E09869C03475154B809A4A7A418438D8A914EA2E47F170776B6A2",
+			"enabled": true
+		},
+		{
+			"key": "isoDateTodayNL",
+			"value": "2020-06-25T14:10:28.463Z",
+			"enabled": true
+		},
+		{
+			"key": "quoteLengthv1",
+			"value": 4,
+			"enabled": true
+		},
+		{
+			"key": "availableDaysLengthv1",
+			"value": 10,
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv10",
+			"value": "2018-10-18",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv11",
+			"value": "2018-10-19",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv12",
+			"value": "2018-10-22",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv13",
+			"value": "2018-10-23",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv14",
+			"value": "2018-10-24",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv15",
+			"value": "2018-10-25",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv16",
+			"value": "2018-10-26",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv17",
+			"value": "2018-10-29",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv18",
+			"value": "2018-10-30",
+			"enabled": true
+		},
+		{
+			"key": "availableDaysv19",
+			"value": "2018-10-31",
+			"enabled": true
+		},
+		{
+			"key": "productId0",
+			"value": "EX09",
+			"enabled": true
+		},
+		{
+			"key": "productCode0",
+			"value": "208EX09",
+			"enabled": true
+		},
+		{
+			"key": "productName0",
+			"value": "Voor 09:00",
+			"enabled": true
+		},
+		{
+			"key": "deliveryDate0",
+			"value": "2018-10-19",
+			"enabled": true
+		},
+		{
+			"key": "collectionDate0",
+			"value": "2018-10-18",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime0",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime0",
+			"value": "19:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime0",
+			"value": "17:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitDaysExcludingHolidays0",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "collectionDepotId0",
+			"value": 10372,
+			"enabled": true
+		},
+		{
+			"key": "deliveryDepotId0",
+			"value": 15062,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat0",
+			"value": 159.79,
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat0",
+			"value": 193.35,
+			"enabled": true
+		},
+		{
+			"key": "currencyCode0",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "isCustomsControlled0",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "orderHashcode0",
+			"value": "A126BA16BA0F63C0F133825FCFE2277DEDF6E65772AD9492F9F536E6AB053C70",
+			"enabled": true
+		},
+		{
+			"key": "priceHashcode0",
+			"value": "ACC355CD8FC5FC0E58F703FEDA1653097968D0E435608E9E1508CB59B3F501A1",
+			"enabled": true
+		},
+		{
+			"key": "productId1",
+			"value": "EX10",
+			"enabled": true
+		},
+		{
+			"key": "productCode1",
+			"value": "208EX10",
+			"enabled": true
+		},
+		{
+			"key": "productName1",
+			"value": "Voor 10:00",
+			"enabled": true
+		},
+		{
+			"key": "deliveryDate1",
+			"value": "2018-10-19",
+			"enabled": true
+		},
+		{
+			"key": "collectionDate1",
+			"value": "2018-10-18",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime1",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime1",
+			"value": "19:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime1",
+			"value": "17:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitDaysExcludingHolidays1",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "collectionDepotId1",
+			"value": 10372,
+			"enabled": true
+		},
+		{
+			"key": "deliveryDepotId1",
+			"value": 15062,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat1",
+			"value": 148.04,
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat1",
+			"value": 179.13,
+			"enabled": true
+		},
+		{
+			"key": "currencyCode1",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "isCustomsControlled1",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "orderHashcode1",
+			"value": "CEE85A03AB24CB89E491A98E2A05D3E4B6FDBAD34554E9424404521E32414E4F",
+			"enabled": true
+		},
+		{
+			"key": "priceHashcode1",
+			"value": "E59108952126E8D56D493A60EEF4E08F65256C977FFFA9551333E3390AE40ABA",
+			"enabled": true
+		},
+		{
+			"key": "productId2",
+			"value": "EX12",
+			"enabled": true
+		},
+		{
+			"key": "productCode2",
+			"value": "208EX12",
+			"enabled": true
+		},
+		{
+			"key": "productName2",
+			"value": "Voor 12:00",
+			"enabled": true
+		},
+		{
+			"key": "deliveryDate2",
+			"value": "2018-10-19",
+			"enabled": true
+		},
+		{
+			"key": "collectionDate2",
+			"value": "2018-10-18",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime2",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime2",
+			"value": "19:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime2",
+			"value": "17:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitDaysExcludingHolidays2",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "collectionDepotId2",
+			"value": 10372,
+			"enabled": true
+		},
+		{
+			"key": "deliveryDepotId2",
+			"value": 15062,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat2",
+			"value": 124.54,
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat2",
+			"value": 150.69,
+			"enabled": true
+		},
+		{
+			"key": "currencyCode2",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "isCustomsControlled2",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "orderHashcode2",
+			"value": "5D5BCCEDDFA7FED8436B2254586392D849759D8231232333DF79164CB4DC2925",
+			"enabled": true
+		},
+		{
+			"key": "priceHashcode2",
+			"value": "8A897F0E63D4A483F70923DBC6FC13E0A266A38948E812134B52E8035EE6B496",
+			"enabled": true
+		},
+		{
+			"key": "productId3",
+			"value": "EX",
+			"enabled": true
+		},
+		{
+			"key": "productCode3",
+			"value": "208EX",
+			"enabled": true
+		},
+		{
+			"key": "productName3",
+			"value": "Voor 18:00",
+			"enabled": true
+		},
+		{
+			"key": "deliveryDate3",
+			"value": "2018-10-19",
+			"enabled": true
+		},
+		{
+			"key": "collectionDate3",
+			"value": "2018-10-18",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime3",
+			"value": "12:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime3",
+			"value": "19:15:00",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime3",
+			"value": "17:45:00",
+			"enabled": true
+		},
+		{
+			"key": "transitDaysExcludingHolidays3",
+			"value": 1,
+			"enabled": true
+		},
+		{
+			"key": "collectionDepotId3",
+			"value": 10372,
+			"enabled": true
+		},
+		{
+			"key": "deliveryDepotId3",
+			"value": 15062,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat3",
+			"value": 118.66,
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat3",
+			"value": 143.58,
+			"enabled": true
+		},
+		{
+			"key": "currencyCode3",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "isCustomsControlled3",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "orderHashcode3",
+			"value": "9FEE9E6403224F2F5884EFBD0722728C50B44766A144E8441313CF2C88537CDC",
+			"enabled": true
+		},
+		{
+			"key": "priceHashcode3",
+			"value": "626C9925BB1A35F5DDD5438C2C65431357776A754AB41A868E59C5990C5C31BF",
+			"enabled": true
+		},
+		{
+			"key": "productId4",
+			"value": "EC",
+			"enabled": true
+		},
+		{
+			"key": "productCode4",
+			"value": "208EC",
+			"enabled": true
+		},
+		{
+			"key": "productName4",
+			"value": "Vor 18:00",
+			"enabled": true
+		},
+		{
+			"key": "deliveryDate4",
+			"value": "2018-10-15",
+			"enabled": true
+		},
+		{
+			"key": "collectionDate4",
+			"value": "2018-10-08",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime4",
+			"value": "10:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime4",
+			"value": "17:30:00",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime4",
+			"value": "16:00:00",
+			"enabled": true
+		},
+		{
+			"key": "transitDaysExcludingHolidays4",
+			"value": 5,
+			"enabled": true
+		},
+		{
+			"key": "collectionDepotId4",
+			"value": 12482,
+			"enabled": true
+		},
+		{
+			"key": "deliveryDepotId4",
+			"value": 11694,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat4",
+			"value": 327.82,
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat4",
+			"value": 327.82,
+			"enabled": true
+		},
+		{
+			"key": "currencyCode4",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "isCustomsControlled4",
+			"value": true,
+			"enabled": true
+		},
+		{
+			"key": "orderHashcode4",
+			"value": "D584ED7F125D64FEE99ECCCDBF013E2FD4743A6DB95A3CC494ED65CEDF59C3C7",
+			"enabled": true
+		},
+		{
+			"key": "priceHashcode4",
+			"value": "B99F722937E7FB4461246B06E7A076EBF9B700A96835BA82FFB622E763F0262B",
+			"enabled": true
+		},
+		{
+			"key": "vat",
+			"value": 4.7,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat",
+			"value": 22.39,
+			"enabled": true
+		},
+		{
+			"key": "productIdv",
+			"value": "EC",
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat",
+			"value": 27.09,
+			"enabled": true
+		},
+		{
+			"key": "senderLocalTime",
+			"value": "2018-10-02T15:00:00",
+			"enabled": true
+		},
+		{
+			"key": "productId5",
+			"value": "EC",
+			"enabled": true
+		},
+		{
+			"key": "productCode5",
+			"value": "200EC",
+			"enabled": true
+		},
+		{
+			"key": "productName5",
+			"value": "Economy Express",
+			"enabled": true
+		},
+		{
+			"key": "deliveryDate5",
+			"value": "2018-10-10",
+			"enabled": true
+		},
+		{
+			"key": "collectionDate5",
+			"value": "2018-10-08",
+			"enabled": true
+		},
+		{
+			"key": "icaStartTime5",
+			"value": "16:00:00",
+			"enabled": true
+		},
+		{
+			"key": "icaEndTime5",
+			"value": "17:00:00",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime5",
+			"value": "17:00:00",
+			"enabled": true
+		},
+		{
+			"key": "transitDaysExcludingHolidays5",
+			"value": 2,
+			"enabled": true
+		},
+		{
+			"key": "collectionDepotId5",
+			"value": 11749,
+			"enabled": true
+		},
+		{
+			"key": "deliveryDepotId5",
+			"value": 12857,
+			"enabled": true
+		},
+		{
+			"key": "vat5",
+			"value": 0,
+			"enabled": true
+		},
+		{
+			"key": "totalExclVat5",
+			"value": 0,
+			"enabled": true
+		},
+		{
+			"key": "totalInclVat5",
+			"value": 0,
+			"enabled": true
+		},
+		{
+			"key": "currencyCode5",
+			"value": "EUR",
+			"enabled": true
+		},
+		{
+			"key": "isCustomsControlled5",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "orderHashcode5",
+			"value": "A1AC0538335CB8E3C9598C37CEEF48DFD119AABF32D9E64A91FF14609D8B1045",
+			"enabled": true
+		},
+		{
+			"key": "priceHashcode5",
+			"value": "1C5248905FAD641C48CABAA3A3B5784A74723EF143E5101C9F3CFC36748AC332",
+			"enabled": true
+		},
+		{
+			"key": "csrf2",
+			"value": "42a44b72-2c51-421e-a318-acdf40903705",
+			"enabled": true
+		},
+		{
+			"key": "token2",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdENyZWF0ZWRBdCI6IjE1OTQwMjA3NjE3NDAiLCJpc3N1ZXIiOiJnYXRla2VlcGVyIiwicGVybWlzc2lvbnMiOiJvcmdhbml6YXRpb25fYWRtaW4sdG50X3VzZXIiLCJ0b2tlblZhbHVlIjoiOTQ4MDY3NTMtODM4Yy00MGMwLWFkM2MtZWU1ZDRkNjIwOWI2IiwiaXNzdWVkQXQiOiIxNTk0MDIwNzYxNzQwIiwidG9rZW5JZCI6IjQyYTQ0YjcyLTJjNTEtNDIxZS1hMzE4LWFjZGY0MDkwMzcwNSIsIm9yZ2FuaXphdGlvbklkIjoiZmFhZmU2NGUtMTgxOC00MDc5LThhODQtZGUyMjc0NjgzYTI2IiwidXNlcklkIjoiNzJhZDViNzYtOWQ4NS00NTU2LWI4ODUtN2EyYWNmMWE4ODcwIn0.6dfJb-D0tYWBv0dgi_83q6gsku9nvEd0A2th6tXPHuQ",
+			"enabled": true
+		},
+		{
+			"key": "id",
+			"value": "22c00cfc-1664-4591-b122-8b7e3cbfd671",
+			"enabled": true
+		},
+		{
+			"key": "ratingResponseIF",
+			"value": "{\"productRatings\":[{\"chargeBreakdown\":[{\"chargeDescription\":\"FREIGHT\",\"chargeIdentifier\":\"FRT\",\"chargeType\":\"BASIC_ELEMENT\",\"customerTariffAmount\":329.55,\"fullTariffAmount\":329.55,\"vatIndicator\":true,\"chargeFormatType\":\"MONETARY\"},{\"chargeDescription\":\"INSURANCE\",\"chargeIdentifier\":\"IN\",\"chargeType\":\"PRODUCT_OPTION\",\"customerTariffAmount\":2.66,\"fullTariffAmount\":2.66,\"vatIndicator\":true,\"chargeFormatType\":\"MONETARY\"},{\"chargeDescription\":\"ENHANCED SECURITY SURCHARGE\",\"chargeIdentifier\":\"ESS00\",\"chargeType\":\"SURCHARGE\",\"customerTariffAmount\":1.46,\"fullTariffAmount\":1.46,\"vatIndicator\":true,\"chargeFormatType\":\"MONETARY\"},{\"chargeDescription\":\"FUEL SURCHARGE REFERENCIADO\",\"chargeIdentifier\":\"FSI00\",\"chargeType\":\"SURCHARGE\",\"customerTariffAmount\":65.91,\"fullTariffAmount\":65.91,\"vatIndicator\":true,\"chargeFormatType\":\"MONETARY\"},{\"chargeDescription\":\"IVA 21%\",\"chargeIdentifier\":\"VAT02\",\"chargeType\":\"VAT\",\"customerTariffAmount\":0.00,\"fullTariffAmount\":83.91,\"vatIndicator\":false,\"chargeFormatType\":\"MONETARY\"}],\"product\":{\"applyOptions\":[{\"insuranceAmount\":null,\"insuranceCurrencyCode\":null,\"productOption\":\"IN\"}],\"collectionDate\":null,\"lineOfBusiness\":\"200\",\"productCode\":\"EX\"},\"productPayweightResults\":[{\"actualVolume\":0.001,\"actualWeight\":33.69,\"cubeConversionFactor\":200.00,\"cubedWeight\":0.200,\"payWeight\":33.690,\"payweightType\":\"ACTUAL_WEIGHT\"}],\"ratingErrorCode\":null,\"ratingProvider\":\"com.tnt.rate.globallink.service.GlobalLinkRatingService\",\"totalPrice\":483.49,\"totalPriceCustomerRate\":399.58,\"totalPriceFullTariff\":399.58,\"vatTotal\":83.91,\"periodVolumeDiscountIndicator\":false}]}",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv18",
+			"value": "47dd7545-04f4-45d2-ba8d-4717bbb70ca7",
+			"enabled": true
+		},
+		{
+			"key": "documentsHash",
+			"value": "PbyywhvVcSqbvrFW2yCBtEWpTq5ErBktPOBDwCv-XEZBhhSqNrQjalZjEGKCSAVrUT9ORzVmHeentsnS9_yfUg",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv110",
+			"value": "7f2f61db-4727-4b08-9b5d-f5dbff348691",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv19",
+			"value": "e933f437-4ac9-44a0-abbd-b9323b47227c",
+			"enabled": true
+		},
+		{
+			"key": "filter",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "consignmentNumber",
+			"value": "128509082",
+			"enabled": true
+		},
+		{
+			"key": "draftId",
+			"value": "663649a3-3ef7-4e37-9a06-eeff9e495ad7",
+			"enabled": true
+		},
+		{
+			"key": "collectionMonday",
+			"value": "2020-07-04",
+			"enabled": true
+		},
+		{
+			"key": "shipmentId",
+			"value": "605364446626",
+			"enabled": true
+		},
+		{
+			"key": "accountNumber",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "bookingNumber",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "receiverEmailAddress",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "receiverPhoneNumber",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "senderEmailAddress",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "senderPhoneNumber",
+			"value": false,
+			"enabled": true
+		},
+		{
+			"key": "shipmentId2",
+			"value": "603603086275",
+			"enabled": true
+		},
+		{
+			"key": "lastCallTime",
+			"value": "17:45:00",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv111",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv112",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv113",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "collectionDateDayBefore",
+			"value": "2020-06-24",
+			"enabled": true
+		},
+		{
+			"key": "isoDateToday",
+			"value": "2020-06-25T12:10:31.174Z",
+			"enabled": true
+		},
+		{
+			"key": "isoDateTomorrow",
+			"value": "2020-06-26T12:10:31.174Z",
+			"enabled": true
+		},
+		{
+			"key": "draftId1",
+			"value": "bdb2679d-34ea-45cf-bd21-71b1c320eb21",
+			"enabled": true
+		},
+		{
+			"key": "draftId2",
+			"value": "47fc3652-7a0b-46d3-ae25-fa96bbc91900",
+			"enabled": true
+		},
+		{
+			"key": "orderId",
+			"value": "fe14f698-1f19-439f-ae2c-47bc6e725499",
+			"enabled": true
+		},
+		{
+			"key": "quoteIdv114",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "quoteIda10",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "quoteIda11",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "quoteIda12",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "quoteIda13",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2021-01-19T23:28:34.681Z",
+	"_postman_exported_using": "Postman/7.36.1"
+}

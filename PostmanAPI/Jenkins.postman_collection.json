@@ -1,0 +1,696 @@
+{
+	"info": {
+		"_postman_id": "2f63b307-4774-427a-aec1-8af3eb041329",
+		"name": "Jenkins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sample Copy",
+			"item": [
+				{
+					"name": "Authenticate",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.globals.set(\"locale\",\"nl_NL\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"response should be okay to process\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    console.log(\"TestCase: Status Code should be 200\" + \", Expected: \" + \"Response code should be 200\" + \", Actual: \" + pm.response.code);",
+									"    // pm.response.to.not.be.error;  // status code changes post this line",
+									"    // pm.response.to.have.status(200);",
+									"    // if (pm.response.to.have.status == \"OK\") {",
+									"",
+									"    var jsonReq = JSON.parse(pm.request.body.raw);",
+									"    var jsonRes = pm.response.json();",
+									"    console.log(\"Request body is as below: \")",
+									"    console.log(jsonReq)",
+									"    console.log(\"Response body is as below: \")",
+									"    console.log(jsonRes)",
+									"",
+									"    var token2 = pm.cookies.get('token2');",
+									"    pm.globals.set(\"token2\", token2);",
+									"",
+									"    var csrf2 = pm.cookies.get('csrf2');",
+									"    pm.globals.set(\"csrf2\", csrf2);",
+									"    //}",
+									"    const jar = pm.cookies.jar();",
+									"",
+									"    //var token2 = pm.cookies.get('token2')",
+									"    jar.unset(pm.request.url, 'token2', function (error) { });",
+									"    //console.log('test1' + pm.cookies.get('token2')) });",
+									"",
+									"});",
+									"",
+									"",
+									"",
+									"",
+									"",
+									"",
+									"/* var json = JSON.parse(responseBody)",
+									" var companyId = json.defaultCompany.id",
+									" var companyName = json.defaultCompany.name;",
+									" var isOwnedByCurrentUser = json.defaultCompany.isOwnedByCurrentUser",
+									" var tntAccountNumber = json.defaultCompany.tntAccountNumber",
+									" var username = json.username",
+									" var permissions = []",
+									" permissions = json.permissions.slice()",
+									" var id = json.id",
+									" var organizationId = json.organizationId",
+									"    // console.log(companyId,companyName,isOwnedByCurrentUser,tntAccountNumber,username,permissions[0],permissions[1],id,organizationId) */",
+									"",
+									"    //get headers",
+									"",
+									"",
+									"    //set companyId",
+									"/*   pm.globals.set(\"id\",companyId);",
+									"   console.log(\"companyId\",companyId) */",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"locale\": \"en_AU\",\n    \"username\": \"Netherlands@yopmail.com\",\n    \"password\": \"Netherlands@yopmail.com\"\n}"
+						},
+						"url": {
+							"raw": "https://mytnt.tst.tnt-digital.com/authenticate",
+							"protocol": "https",
+							"host": [
+								"mytnt",
+								"tst",
+								"tnt-digital",
+								"com"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Account management",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"response should be okay to process\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    // pm.response.to.not.be.error;  // status code changes post this line",
+									"    // pm.response.to.have.status(200);",
+									"    //  var jsonReq = pm.request.url;",
+									"    var jsonRes = pm.response.json();",
+									"    //  console.log(\"Request body is as below: \")",
+									"    //  console.log(jsonReq)",
+									"    console.log(\"Response body is as below: \")",
+									"    console.log(jsonRes)",
+									"",
+									"    //  var json = JSON.parse(responseBody);",
+									"    var id = jsonRes[0].id;",
+									"    // pm.expect(id).to.have.property(jsonRes[0])",
+									"    pm.globals.set(\"id\", id);",
+									"    console.log(id)",
+									"    const jar = pm.cookies.jar();",
+									"    //var token2 = pm.cookies.get('token2')",
+									"    jar.unset(pm.request.url, 'token2', function (error) { });",
+									"    //console.log('test1' + pm.cookies.get('token2')) });",
+									"});",
+									"",
+									"",
+									"//if (pm.response.to.have.status == \"OK\") {",
+									"",
+									"//}",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "token2={{token2}};csrf2={{csrf2}}"
+							},
+							{
+								"key": "TNT-CSRF",
+								"type": "text",
+								"value": "{{csrf2}}"
+							}
+						],
+						"url": {
+							"raw": "https://mytnt.tst.tnt-digital.com/service/account-management-service/users/authenticated/accounts?status=NEW,APPROVED,MODIFIED,REFINE_DETAILS&order=ASC&orderBy=accountName&limit=999",
+							"protocol": "https",
+							"host": [
+								"mytnt",
+								"tst",
+								"tnt-digital",
+								"com"
+							],
+							"path": [
+								"service",
+								"account-management-service",
+								"users",
+								"authenticated",
+								"accounts"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "NEW,APPROVED,MODIFIED,REFINE_DETAILS"
+								},
+								{
+									"key": "order",
+									"value": "ASC"
+								},
+								{
+									"key": "orderBy",
+									"value": "accountName"
+								},
+								{
+									"key": "limit",
+									"value": "999"
+								}
+							]
+						},
+						"description": "https://mytnt.tst.tnt-digital.com/service/account-management-service/users/authenticated/accounts?status=NEW,APPROVED,MODIFIED,REFINE_DETAILS&order=ASC&orderBy=accountName&limit=999"
+					},
+					"response": []
+				},
+				{
+					"name": "Quote",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//isoDateToday",
+									"var moment = require('moment');",
+									"",
+									"//collectionDateToday",
+									"var collectionDateToday = moment().format(\"YYYY-MM-DD\");",
+									"pm.globals.set(\"collectionDateToday\", collectionDateToday);",
+									"",
+									"",
+									"",
+									"//collectionDateNextDay",
+									"var collectionDateNextDay = moment().add(1, 'days').format(\"YYYY-MM-DD\");",
+									"pm.globals.set(\"collectionDateNextDay\", collectionDateNextDay);",
+									"",
+									"//console.log(collectionDateNextDay)"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"response should be okay to process\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    // pm.response.to.not.be.error;  // status code changes post this line",
+									"    //pm.response.to.have.status(200);",
+									"    var jsonReq = JSON.parse(pm.request.body.raw);",
+									"    var jsonRes = pm.response.json();",
+									"    console.log(\"Request body is as below: \")",
+									"    console.log(jsonReq)",
+									"    console.log(\"Response body is as below: \")",
+									"    console.log(jsonRes)",
+									"",
+									"    var json = JSON.parse(responseBody);",
+									"    var quoteLength = json.quotes.length;",
+									"",
+									"    var quoteIdv1 = [];",
+									"    var quotev1 = [];",
+									"    var productCode = [];",
+									"",
+									"    for (i = 0; i < quoteLength; i++) {",
+									"        quotev1[i] = json.quotes[i];",
+									"        quoteIdv1[i] = quotev1[i].quoteId;",
+									"",
+									"        //set qouteID",
+									"        pm.globals.set(\"quoteIdv1\" + [i], quoteIdv1[i]);",
+									"",
+									"        productCode.push(quotev1[i].product.code)",
+									"        //console.log(productCode.toString())",
+									"    }",
+									"",
+									"    //fetch currencyCode",
+									"    var currencyCode = quotev1[0].price.currencyCode;",
+									"    pm.globals.set(\"currencyCode\", currencyCode);",
+									"",
+									"    //pick the icaStartTime and icaEndTime",
+									"    var icaStartTime = json.quotes[0].transitTimes.icaStartTime;",
+									"    var icaEndTime = json.quotes[0].transitTimes.icaEndTime;",
+									"",
+									"    pm.globals.set(\"icaStartTime\", icaStartTime);",
+									"    pm.globals.set(\"icaEndTime\", icaEndTime);",
+									"",
+									"",
+									"    const jar = pm.cookies.jar();",
+									"",
+									"    //var token2 = pm.cookies.get('token2')",
+									"    jar.unset(pm.request.url, 'token2', function (error) { });",
+									"    //console.log('test1' + pm.cookies.get('token2')) });",
+									"});",
+									"",
+									"/*",
+									"if (pm.response.to.have.status == \"OK\") {",
+									"    var json = JSON.parse(responseBody);",
+									"    var quoteLength = json.quotes.length;",
+									"",
+									"    var quoteIdv1 = [];",
+									"    var quotev1 = [];",
+									"    var productCode = [];",
+									"",
+									"    for (i = 0; i < quoteLength; i++) {",
+									"        quotev1[i] = json.quotes[i];",
+									"        quoteIdv1[i] = quotev1[i].quoteId;",
+									"",
+									"        //set qouteID",
+									"        pm.globals.set(\"quoteIdv1\" + [i], quoteIdv1[i]);",
+									"",
+									"        productCode.push(quotev1[i].product.code)",
+									"        //console.log(productCode.toString())",
+									"    }",
+									"",
+									"    //fetch currencyCode",
+									"    var currencyCode = quotev1[0].price.currencyCode;",
+									"    pm.globals.set(\"currencyCode\", currencyCode);",
+									"",
+									"    //pick the icaStartTime and icaEndTime",
+									"    var icaStartTime = json.quotes[0].transitTimes.icaStartTime;",
+									"    var icaEndTime = json.quotes[0].transitTimes.icaEndTime;",
+									"",
+									"    pm.globals.set(\"icaStartTime\", icaStartTime);",
+									"    pm.globals.set(\"icaEndTime\", icaEndTime);",
+									"",
+									"",
+									"    //Test",
+									"    //vat",
+									"    //  tests[\"check vat\"] = quotev1[0].price.vat === 0;",
+									"",
+									"    //totalExclVat",
+									"   pm.tests[\"check totalExclVat\"].to.be.equal.quotev1[0].price.totalExclVat > 0;",
+									"",
+									"    //totalInclVat",
+									"    tests[\"check totalInclVat\"] = quotev1[0].price.totalInclVat > 0;",
+									"",
+									"    //currencyCode",
+									"    tests[\"check currency code\"] = quotev1[0].price.currencyCode === \"EUR\";",
+									"",
+									"    //isCustomsControlled",
+									"    tests[\"check customsControlled\"] = quotev1[0].isCustomsControlled === true;",
+									"",
+									"    //product codes",
+									"    tests[\"check product codes\"] = productCode.toString() === \"200EC\";",
+									"}",
+									"*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "lm5xPdZ0",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "myShippingUser",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "token2={{token2}};csrf2={{csrf2}}",
+								"type": "text"
+							},
+							{
+								"key": "TNT-CSRF",
+								"value": "{{csrf2}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"locale\": \"en_GB\",\n    \"account\": {\n        \"id\": \"{{id}}\"\n    },\n    \"collection\": {\n        \"city\": \"Amsterdam\",\n        \"postCode\": \"1060RX\",\n        \"countryCode\": \"NL\"\n    },\n    \"delivery\": {\n        \"city\": \"chennai\",\n        \"postCode\": \"600024\",\n        \"countryCode\": \"IN\"\n    },\n    \"shipment\": {\n        \"items\": [\n            {\n                \"weight\": 55,\n                \"quantity\": 1,\n                \"packageType\": \"BOX\",\n                \"productType\": \"NDOCS\",\n                \"length\": 0.22,\n                \"width\": 0.33,\n                \"height\": 0.44\n            }\n        ],\n        \"dangerousGoodsOptions\": [\n            {\n                \"code\": \"BB\",\n                \"id\": \"UN3373\"\n            }\n        ],\n        \"value\": {\n            \"currencyCode\": \"EUR\",\n            \"amount\": 3000\n        },\n        \"collectionDate\": \"{{collectionDateNextDay}}\",\n        \"paidBy\": \"Sender\",\n        \"createdBy\": \"Sender\",\n        \"hasAdditionalSenderAddress\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mytnt.tst.tnt-digital.com/service/quote-service/v2/quotes/products",
+							"protocol": "https",
+							"host": [
+								"mytnt",
+								"tst",
+								"tnt-digital",
+								"com"
+							],
+							"path": [
+								"service",
+								"quote-service",
+								"v2",
+								"quotes",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Option",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"response should be okay to process\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    // pm.response.to.not.be.error;  // status code changes post this line",
+									"    //pm.response.to.have.status(200);",
+									"",
+									"    var jsonReq = JSON.parse(pm.request.body.raw);",
+									"    var jsonRes = pm.response.json();",
+									"    console.log(\"Request body is as below: \")",
+									"    console.log(jsonReq)",
+									"    console.log(\"Response body is as below: \")",
+									"    console.log(jsonRes)",
+									"",
+									"    var json = JSON.parse(responseBody);",
+									"    var quoteId = json.quoteId;",
+									"",
+									"    //set quoteId",
+									"    pm.globals.set(\"quoteId\", quoteId);",
+									"",
+									"    const jar = pm.cookies.jar();",
+									"",
+									"    //var token2 = pm.cookies.get('token2')",
+									"    jar.unset(pm.request.url, 'token2', function (error) { });",
+									"    //console.log('test1' + pm.cookies.get('token2')) });",
+									"});",
+									"/*",
+									"",
+									"if (pm.response.to.have.status == \"OK\") {",
+									"    var json = JSON.parse(responseBody);",
+									"    var quoteId = json.quoteId;",
+									"",
+									"    //set quoteId",
+									"    pm.globals.set(\"quoteId\", quoteId);",
+									"}",
+									"",
+									"const jar = pm.cookies.jar();",
+									"",
+									"//var token2 = pm.cookies.get('token2')",
+									"jar.unset(pm.request.url, 'token2', function (error) { console.log('test1' + pm.cookies.get('token2')) });",
+									"*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"locale\": \"nl_NL\",\n    \"options\": [\n        {\n            \"id\": \"BB\"\n        },\n        {\n            \"id\": \"IN\",\n            \"value\": {\n                \"currencyCode\": \"EUR\",\n                \"amount\": 45\n            }\n        },\n        {\n            \"id\": \"PR\"\n        }\n    ],\n    \"quoteId\": \"d3efd83f-79c2-4f0b-a766-45275f774d35\"\n}"
+						},
+						"url": {
+							"raw": "https://mytnt.tst.tnt-digital.com/service/quote-service/v4/quotes/options",
+							"protocol": "https",
+							"host": [
+								"mytnt",
+								"tst",
+								"tnt-digital",
+								"com"
+							],
+							"path": [
+								"service",
+								"quote-service",
+								"v4",
+								"quotes",
+								"options"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"response should be okay to process\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    // pm.response.to.not.be.error;  // status code changes post this line",
+									"    //pm.response.to.have.status(200);",
+									"",
+									"    var jsonReq = JSON.parse(pm.request.body.raw);",
+									"    var jsonRes = pm.response.json();",
+									"    console.log(\"Request body is as below: \")",
+									"    console.log(jsonReq)",
+									"    console.log(\"Response body is as below: \")",
+									"    console.log(jsonRes)",
+									"",
+									"    const jar = pm.cookies.jar();",
+									"",
+									"    var json = JSON.parse(responseBody);",
+									"    var orderReference = json.orderReference;",
+									"    var consignmentNumber = json.consignmentNumber;",
+									"    var documentsHash = json.documentsHash;",
+									"",
+									"    //check orderReference",
+									"    tests[\"check orderReference\"] = orderReference !== null",
+									"",
+									"    //check consignmentNumber",
+									"    tests[\"check consignmentNumber\"] = consignmentNumber !== null",
+									"    //check documentsHash",
+									"    tests[\"check documentsHash\"] = documentsHash !== null",
+									"    pm.globals.set(\"documentsHash\", pm.response.json().documentsHash)",
+									"",
+									"    //var token2 = pm.cookies.get('token2')",
+									"    jar.unset(pm.request.url, 'token2', function (error) { });",
+									"    //console.log('test1' + pm.cookies.get('token2')) });",
+									"});",
+									"",
+									"/*",
+									"if (pm.response.to.have.status == \"OK\") {",
+									"    var json = JSON.parse(responseBody);",
+									"    var orderReference = json.orderReference;",
+									"    var consignmentNumber = json.consignmentNumber;",
+									"    var documentsHash = json.documentsHash;",
+									"",
+									"    //check orderReference",
+									"    tests[\"check orderReference\"] = orderReference !== null",
+									"",
+									"    //check consignmentNumber",
+									"    tests[\"check consignmentNumber\"] = consignmentNumber !== null",
+									"    //check documentsHash",
+									"    tests[\"check documentsHash\"] = documentsHash !== null",
+									"    m.globals.set(\"documentsHash\", pm.response.json().documentsHash)",
+									"",
+									"}",
+									"",
+									"const jar = pm.cookies.jar();",
+									"",
+									"//var token2 = pm.cookies.get('token2')",
+									"jar.unset(pm.request.url, 'token2', function (error) { console.log('test1' + pm.cookies.get('token2')) });",
+									"*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "token2={{token2}};csrf2={{csrf2}}"
+							},
+							{
+								"key": "TNT-CSRF",
+								"type": "text",
+								"value": "{{csrf2}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"locale\": \"{{locale}}\",\n    \"quoteId\": \"{{quoteId}}\",\n    \"id\": \"{{id}}\",\n    \"shipment\": {\n        \"isRegularCollection\": true,\n        \"isNewCollection\": false,\n        \"collectionWindow\": {\n            \"from\": \"12:00:00\",\n            \"to\": \"13:00:00\"\n        },\n        \"additionalInformation\": {\n            \"goodsDescription\": \"goods description\",\n            \"reference\": \"API2\",\n            \"collectionInstructions\": \"TEST coll inst\",\n            \"deliveryInstructions\": \"delivery instruction\"\n        },\n        \"paymentMethod\": {\n            \"type\": \"Invoice\"\n        }\n    },\n    \"sender\": {\n        \"contactDetails\": {\n            \"companyName\": \"Test Company\",\n            \"contactName\": \"TEST CONTACT NAME\",\n            \"telephoneNumber\": \"+443434343434\",\n            \"emailAddress\": \"TestAU@yopmail.com\",\n            \"vatNumber\": \"NL814983352B01\"\n        },\n        \"address\": {\n            \"addressLine1\": \"TNT Test House\",\n            \"addressLine2\": \"Do Not Collect Street\",\n            \"city\": \"Amsterdam\",\n            \"postCode\": \"1060RX\",\n            \"countryCode\": \"NL\"\n        }\n    },\n    \"receiver\": {\n        \"contactDetails\": {\n            \"companyName\": \"receiver company\",\n            \"contactName\": \"receiver contact\",\n            \"telephoneNumber\": \"+443434343434\",\n            \"emailAddress\": \"AUreceiver@yopmail.com\",\n            \"vatNumber\": \"NL814983352B01\"\n        },\n        \"address\": {\n            \"addressLine1\": \"RTest Address line1\",\n            \"addressLine2\": \"RTest Address line2\",\n            \"addressLine3\": \"RTest Address line3\",\n            \"city\": \"chennai\",\n            \"postCode\": \"600024\",\n            \"countryCode\": \"IN\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://mytnt.tst.tnt-digital.com/service/order-service/v2/orders",
+							"protocol": "https",
+							"host": [
+								"mytnt",
+								"tst",
+								"tnt-digital",
+								"com"
+							],
+							"path": [
+								"service",
+								"order-service",
+								"v2",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Doc-Gen",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"response should be okay to process\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    // pm.response.to.not.be.error;  // status code changes post this line",
+									"    //pm.response.to.have.status(200);",
+									"",
+									"    var jsonReq = pm.request.url;",
+									"    var jsonRes = pm.response.json();",
+									"    console.log(\"Request body is as below: \")",
+									"    console.log(jsonReq)",
+									"    console.log(\"Response body is as below: \")",
+									"    console.log(jsonRes)",
+									"",
+									"    const jar = pm.cookies.jar();",
+									"",
+									"    //var token2 = pm.cookies.get('token2')",
+									"    jar.unset(pm.request.url, 'token2', function (error) { });",
+									"    //console.log('test1' + pm.cookies.get('token2')) });",
+									"});",
+									"/*",
+									"",
+									"",
+									"if (pm.response.to.have.status == \"OK\") {",
+									"    var json = JSON.parse(responseBody);",
+									"    var documentsLength = json.documents.length;",
+									"",
+									"    var documentsType = [];",
+									"    var documentsURL = [];",
+									"",
+									"    for (i = 0; i < documentsLength; i++) {",
+									"        documentsType[i] = json.documents[i].type;",
+									"        documentsURL[i] = json.documents[i].url;",
+									"",
+									"        //check documentsType",
+									"        tests[\"check documentsType\" + i] = documentsType[i] !== null",
+									"        //check documentsURL",
+									"        tests[\"check documentsURL\" + i] = documentsURL[i] !== null",
+									"    }",
+									"    //Test status",
+									"    tests[\"status\"] = json.status == \"complete\"",
+									"}",
+									"",
+									"const jar = pm.cookies.jar();",
+									"",
+									"//var token2 = pm.cookies.get('token2')",
+									"jar.unset(pm.request.url, 'token2', function (error) { console.log('test1' + pm.cookies.get('token2')) });",
+									"*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "token2={{token2}};csrf2={{csrf2}}",
+								"type": "text"
+							},
+							{
+								"key": "TNT-CSRF",
+								"value": "{{csrf2}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://mytnt.tst.tnt-digital.com/service/document-generation-service/retrieve/{{documentsHash}}",
+							"protocol": "https",
+							"host": [
+								"mytnt",
+								"tst",
+								"tnt-digital",
+								"com"
+							],
+							"path": [
+								"service",
+								"document-generation-service",
+								"retrieve",
+								"{{documentsHash}}"
+							]
+						},
+						"description": "https://mytnt.tst.tnt-digital.com/service/document-generation-service/retrieve/{{documentsHash}}"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
