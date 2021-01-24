@@ -11,7 +11,9 @@
    },
    "repository":{
       "type":"github",
-      "url":"git@gitlab.dev.com:test.git"
+      "url":"https://github.com/MahalakshmiMasilamani/TestAPI.git",
+      "username":"mahalakshmim.94@gmail.com",
+      "password":"5EP7zG7BRbi3YjR"
    },
    "author":"AB",
    "dependencies":{
