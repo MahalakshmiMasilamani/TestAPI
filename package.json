@@ -3,14 +3,14 @@
    "version":"1.0.0",
    "description":"tests",
    "directories":{
-      "tests":"PostmanCollection",
-      "environments":"PostmanEnvironment"
+      "tests":"PostmanAPI",
+      "environments":"PostmanAPI"
    },
    "scripts":{
-      "sampleAPI":"newman run PostmanCollection/wms_int_b.json --folder Automated -e PostmanEnvironment/Local.postman_environment.json -k --reporters junit"
+      "sampleAPI":"newman run PostmanCollection/Jenkins.postman_collection.json --folder Automated -e PostmanAPI/test.postman_environment.json -g PostmanAPI/My Workspace.postman_globals.json -k --reporters junit"
    },
    "repository":{
-      "type":"git",
+      "type":"github",
       "url":"git@gitlab.dev.com:test.git"
    },
    "author":"AB",
